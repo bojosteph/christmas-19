@@ -1,38 +1,77 @@
-.App {
+.particles {
+  position: fixed;
+  background-color: red;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+body {
   text-align: center;
+  font-family: "Mountains of Christmas", cursive;
+  color: #fff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.img-div {
+  margin-top: 5rem;
+
+  z-index: 1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+h1 {
+  padding-top: 3%;
+  font-weight: 900;
+  font-size: 5rem;
+}
+
+h1:hover {
+  color: #ff7878;
+}
+
+img {
+  width: 40rem;
+  border-radius: 100%;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 5%;
+}
+
+.grinch {
+  width: 25rem;
+  border-radius: 50%;
+}
+
+.sleigh {
+  padding: 3% 3%;
+}
+
+.sleigh:hover {
+  color: #daa927;
+}
+
+.cane {
+  padding-left: 1%;
+  color: green;
+}
+
+.cane:hover {
+  color: #b5ff7d;
+}
+.snowman {
+  padding-right: 1%;
+}
+
+.snowman:hover {
+  color: #e599f7;
+}
+
+@media (max-width: 700px) {
+  img {
+    width: 20rem;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  h1 {
+    font-size: 3rem;
   }
 }
